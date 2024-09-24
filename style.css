@@ -1,0 +1,191 @@
+@font-face {
+  font-family: Leodarck;
+  src: url(assets/fonts/leodarck.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #000000 0%, #0d0152 50%, #291e7c 100%);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header {
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+  main {
+    padding: 10vh 0 10vh 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .content {
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 50%;
+    display:block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro {
+    width: 100%;
+    display:block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+h4 {
+   font-family: Montserrat;
+    color:aliceblue;
+    text-shadow: 0 0 5px #6dc7ff, 
+                 0 0 10px #6dc7ff, 
+                 0 0 15px #6dc7ff, 
+                 0 0 20px #0022ff, 
+                 0 0 35px #0022ff, 
+                 0 0 40px #0022ff, 
+                 0 0 50px #007bff, 
+                 0 0 75px #007bff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+
+  a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 1rem;
+    color:aliceblue;
+    text-shadow: 0 0 5px #6dc7ff, 
+                 0 0 10px #6dc7ff, 
+                 0 0 15px #6dc7ff, 
+                 0 0 20px #0022ff, 
+                 0 0 35px #0022ff, 
+                 0 0 40px #0022ff, 
+                 0 0 50px #007bff, 
+                 0 0 75px #007bff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+a:hover {
+  color:rgb(18, 200, 255);
+    text-shadow: 0 0 5px #6dc7ff, 
+                 0 0 10px #6dc7ff, 
+                 0 0 15px #6dc7ff, 
+                 0 0 20px #0022ff, 
+                 0 0 35px #0022ff, 
+                 0 0 40px #0022ff, 
+                 0 0 50px #007bff, 
+                 0 0 75px #007bff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+  h1 {
+    font-size: 5rem;
+    font-family: Leodarck;
+    font-weight: lighter;
+    color: #12cbff;
+    text-shadow: 0 0 5px #6dc7ff, 
+                 0 0 10px #6dc7ff, 
+                 0 0 15px #6dc7ff, 
+                 0 0 20px #0022ff, 
+                 0 0 35px #0022ff, 
+                 0 0 40px #0022ff, 
+                 0 0 50px #007bff, 
+                 0 0 75px #007bff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  h2 {
+    font-size: 2rem;;
+    font-family: Leodarck;
+    font-weight: lighter;
+    color: #ffffff;
+    text-shadow: 0 0 5px #6dc7ff, 
+                 0 0 10px #6dc7ff, 
+                 0 0 15px #6dc7ff, 
+                 0 0 20px #0022ff, 
+                 0 0 35px #0022ff, 
+                 0 0 40px #0022ff, 
+                 0 0 50px #007bff, 
+                 0 0 75px #007bff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+  p {
+    font-weight: lighter;
+    font-family: Montserrat;
+    font-size: 1rem;
+    color:aliceblue;
+    text-shadow: 0 0 5px #6dc7ff, 
+                 0 0 10px #6dc7ff, 
+                 0 0 15px #6dc7ff, 
+                 0 0 20px #0022ff, 
+                 0 0 35px #0022ff, 
+                 0 0 40px #0022ff, 
+                 0 0 50px #007bff, 
+                 0 0 75px #007bff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #6dc7ff, 
+                   0 0 10px #6dc7ff, 
+                   0 0 15px #6dc7ff, 
+                   0 0 20px #007bff, 
+                   0 0 35px #007bff, 
+                   0 0 40px #007bff, 
+                   0 0 50px #007bff, 
+                   0 0 75px #007bff;
+    }
+    to {
+      text-shadow: 0 0 10px #6dc7ff, 
+                   0 0 20px #6dc7ff, 
+                   0 0 30px #6dc7ff, 
+                   0 0 40px #007bff, 
+                   0 0 70px #007bff, 
+                   0 0 80px #007bff, 
+                   0 0 100px #007bff, 
+                   0 0 150px #007bff;
+    }
+  
+}
+
+.reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-text.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-text p {
+  margin-bottom: 1em;
+}

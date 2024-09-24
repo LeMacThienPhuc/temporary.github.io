@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+          window.location.href = '174hz.html';
+        } else if (event.key === 'ArrowRight') {
+          window.location.href = '396hz.html';
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+    const revealText = document.querySelector('.reveal-text');
+    let isRevealed = false;
+
+    document.addEventListener('keydown', (event) => {
+        if (event.code === 'Space' && !isRevealed) {
+            event.preventDefault(); 
+            revealText.classList.add('revealed');
+            isRevealed = true;
+        }
+    });
+});
+    </script>
+    <script src="libraries/gif.worker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.asciify@0.2.1/dist/p5.asciify.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index.html">☆ Instructions ☆</a>
+      </ul>
+    </nav>
+  </header>
+  <div class="content">
+    <div class="text">
+        <h1>258 hz</h1>
+        <h2>The Regenerator</h2>
+        <div class="reveal-text">
+            <p>You can do a lot, but you don't have to do it all !!</p>
+        </div>
+    </div> 
+</div>
+</div>
+<audio autoplay loop>
+  <source src="assets/sounds/285.MP3" type="audio/mpeg">
+</audio>  
+ <script src="libraries/p5.min.js"></script>
+ <script src="libraries/p5.sound.min.js"></script>
+ <script src="sketch1.js"></script>
+</body>
+</html>
